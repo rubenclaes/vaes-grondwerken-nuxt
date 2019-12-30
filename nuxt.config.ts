@@ -55,11 +55,7 @@ const config: Configuration = {
   /*
    ** Global CSS
    */
-  css: [
-    '@/assets/vendor/nucleo/css/nucleo.css',
-    '@/assets/vendor/font-awesome/css/font-awesome.css',
-    '@/assets/scss/argon.scss'
-  ],
+  css: ['@/assets/vendor/icons/icons.min.css', '@/assets/scss/main.scss'],
 
   /*
    ** Plugins to load before mounting the App
@@ -90,7 +86,8 @@ const config: Configuration = {
 
     '@nuxtjs/pwa',
     '@nuxtjs/sentry',
-    'bootstrap-vue/nuxt',
+    ['nuxt-buefy', { css: false, materialDesignIcons: true }],
+
     '@bazzite/nuxt-optimized-images',
     'vue-scrollto/nuxt',
     '@nuxtjs/markdownit',
@@ -109,7 +106,7 @@ const config: Configuration = {
     mozjpeg: {
       quality: 85
     },
-    optipng: false,
+    optipng: true,
     pngquant: {
       speed: 7,
       quality: [0.65, 0.8]
@@ -117,25 +114,6 @@ const config: Configuration = {
     webp: {
       quality: 80
     }
-  },
-
-  /*
-   ** bootstrapVue module configuration
-   */
-  bootstrapVue: {
-    componentPlugins: [
-      'Badge',
-      'Button',
-      'BreadcrumbPlugin',
-      'CarouselPlugin',
-      'ImagePlugin',
-      'SpinnerPlugin',
-      'InputGroupPlugin',
-      'FormInputPlugin'
-    ],
-    directivePlugins: ['VBPopoverPlugin', 'VBTooltipPlugin'],
-    bootstrapCSS: false, // Or `css: false`
-    bootstrapVueCSS: false // Or `bvCSS: false`
   },
 
   /*
