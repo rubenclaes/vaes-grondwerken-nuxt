@@ -1,6 +1,9 @@
 // Import Bulma's core
 @import '~bulma/sass/utilities/_all';
 
+// Import carousel component
+//@import '~bulma-carousel/src/sass/index';
+
 // Set your colors
 @import 'partials/_colors';
 
@@ -82,3 +85,7 @@
   opacity: 0;
   transform: translate(-30px, 0);
 }
+
+/* ==========================================================================
+ Extra 
+========================================================================== */

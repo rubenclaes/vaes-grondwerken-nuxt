@@ -116,4 +116,13 @@ img.lazyloaded {
     filter: blur(0);
   }
 }
+
+img.is-background {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+  height: 100%;
+  width: 100%;
+}
 </style>
